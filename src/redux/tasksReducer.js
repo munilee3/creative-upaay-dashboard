@@ -3,12 +3,12 @@ import { v4 as uuidv4 } from 'uuid'
 
 const initialState = {
   tasks: [
-    { id: 't1', title: 'Design landing', description: 'Create header layout', status: 'todo', priority: 'High', category: 'Work', dueDate: null },
-    { id: 't2', title: 'Fix checkout', description: 'Payment error', status: 'inprogress', priority: 'Urgent', category: 'Work', dueDate: null },
-    { id: 't3', title: ' client', description: 'Send update', status: 'done', priority: 'Low', category: 'Personal', dueDate: null },
-    { id: 't4', title: 'Email ', description: 'Send update', status: 'done', priority: 'Low', category: 'Personal', dueDate: null },
-    { id: 't5', title: 'Email client', description: 'Send update', status: 'done', priority: 'Low', category: 'Personal', dueDate: null },
-    { id: 't6', title: 'Email client', description: 'Send update', status: 'done', priority: 'Low', category: 'Personal', dueDate: null }
+    { id: 't1', title: 'Brainstorming', description: 'Brainstorming brings team members diverse experience into play.', status: 'todo', priority: 'High', category: 'Work', dueDate: null },
+    { id: 't2', title: 'Brainstorming', description: 'Brainstorming brings team members diverse experience into play.', status: 'inprogress', priority: 'Low', category: 'Work', dueDate: null },
+    { id: 't3', title: 'Brainstorming', description: 'Brainstorming brings team members diverse experience into play.', status: 'done', priority: 'Low', category: 'Personal', dueDate: null },
+    { id: 't4', title: 'Brainstorming ', description: 'Brainstorming brings team members diverse experience into play.', status: 'todo', priority: 'High', category: 'Personal', dueDate: null },
+    { id: 't5', title: 'Brainstorming', description: 'Brainstorming brings team members diverse experience into play.', status: 'todo', priority: 'Medium', category: 'Personal', dueDate: null },
+    { id: 't6', title: 'Brainstorming', description: 'Brainstorming brings team members diverse experience into play.', status: 'inprogress', priority: 'Low', category: 'Personal', dueDate: null }
   ],
   filter: {
     category: 'All',
