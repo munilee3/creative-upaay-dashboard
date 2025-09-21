@@ -20,6 +20,19 @@ const Column = ({ columnId, title, tasks, setModalOpen }) => {
         return "None"
     }
   }
+
+  const line = () => {
+    switch(title) {
+      case "To Do":
+        return "rgba(80, 48, 229, 1)"
+      case "In Progress":
+        return "rgba(255, 165, 0, 1)"
+      case "Done":
+        return "rgba(139, 196, 138, 1)"
+      default:
+        return "None"
+    }
+  }
   return (
     <div style={{backgroundColor:"rgba(245, 245, 245, 1)", borderRadius:"16px", padding: "20px", minHeight:"300px", marginTop: "40px"}}>
       <div style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
@@ -30,7 +43,7 @@ const Column = ({ columnId, title, tasks, setModalOpen }) => {
         </div>
         {title==="To Do" ? <button onClick={() => setModalOpen(true)} type="button" style={{border:"none", backgroundColor:"transparent", cursor:"pointer"}}><img src="/images/add-square-1.svg" alt="add-plus" /></button> : ""}
       </div>
-      <hr style={{border:"2px solid  rgba(255, 165, 0, 1)"}}/>
+      <hr style={{border:`2px solid ${line()}`}}/>
 
       <Droppable droppableId={columnId}>
         {(provided, snapshot) => (
